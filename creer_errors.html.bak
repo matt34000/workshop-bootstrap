@@ -56,10 +56,6 @@
 
 
 
-<form class="form-group" method="POST" action="creer.html">
-
-
-
     <main class="container-xl">
         <div class="row">
             <div class="col-12">
@@ -70,9 +66,13 @@
             <div class="col-4" align="right">
                 <label for="nom"><font size="2"><b>Nom :</b></font> </label>
             </div>
-            <div class="col-6 form-group">
-                <input name="nom" type="text" required id="nom" size="50" class="form-control">
+            <div class="col-6">
+                <input name="nom" type="text" required id="nom" size="50" class="form-control is-invalid">
+                    <div class="invalid-feedback">Le nom est requis</div>
             </div>
+            
+
+            
         </div>    
 
 <br>       
@@ -80,8 +80,9 @@
             <div class="col-4" align="right">
                 <label for="prenom"><font size="2"><b>Prenom :</b></font> </label>
             </div>
-            <div class="col-6 form-group">
-                <input type="text" id="prenom" name="prenom" required size="50" class="form-control">
+            <div class="col-6">
+                <input type="text" id="prenom" name="prenom" required size="50" class="form-control is-invalid">
+                <div class="invalid-feedback">Le prénom est requis</div>
             </div>
         </div> 
 
@@ -91,8 +92,9 @@
             <div class="col-4" align="right">
                 <label for="datenaiss"><font size="2"><b>Date de naissance :</b></font> </label>
             </div>
-            <div class="col-6 form-group">
-                <input type="date" id="datenaiss" name="datenaiss" required size="20" class="form-control">
+            <div class="col-6">
+                <input type="text" id="datenaiss" name="datenaiss" required size="20" class="form-control is-invalid">
+                <div class="invalid-feedback">La date de naissance est requise</div>
             </div>
         </div>
 
@@ -102,8 +104,9 @@
             <div class="col-4" align="right">
                 <label for="adresse"><font size="2"><b>Adresse :</b></font> </label>
             </div>
-            <div class="col-6 form-group">
-                <input type="text" id="adresse" name="adresse" required size="50" class="form-control">
+            <div class="col-6">
+                <input type="text" id="adresse" name="adresse" required size="50" class="form-control is-invalid">
+                <div class="invalid-feedback">L'adresse est requise</div>
             </div>
         </div>
 
@@ -113,55 +116,18 @@
             <div class="col-4" align="right">
                 <label for="secu"><font size="2"><b>Numéro de sécurité sociale :</b></font> </label>
             </div>
-            <div class="col-6" form-group>
-                <input type="text" id="secu" name="secu" required size="20" class="form-control">
+            <div class="col-6">
+                <input type="text" id="secu" name="secu" required size="20" class="form-control is-invalid">
+                <div class="invalid-feedback">Le numéro de sécurité sociale est requis</div>
             </div>
         </div>
 <br><br>
         <div class="row">
             <div class="col-5" align="right">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#validation">Creer</button>
+                <button type="button" class="btn btn-primary">Creer</button>
             </div>
         </div>
-
-
-</form>
-
-<br><br>
-        <div class="row">
-            <div class="col-5" align="right">
-                <a href="creer_errors.html">page creer_errors.html</a>
-            </div>
-        </div>                        
-
-
-
-				<div class="modal fade" id="validation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Ajout d'un collaborateur</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Nom : </p>
-                        <p>Prénom : </p>
-                        <p>Date de Naissance : </p>
-                        <p>Adresse : </p>
-                        <p>Numéro de sécurité sociale : </p>
-                    </div>
-                    <div class="modal-footer">
-                    	<button type="submit" class="btn btn-primary">Creer</button>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
                         
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-
         
        
     </main>
